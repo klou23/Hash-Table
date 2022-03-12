@@ -34,14 +34,14 @@ public class Test {
     }
 
     /**
-     * Tests my hash function using 100 buckets and 200 keys.
+     * Tests my hash function using 100 buckets and 1000 keys.
      * All keys are randomly generated strings of length [1,20] containing characters [a,z]
      * Results will change with everytime the function is run as keys are randomly generated
      */
     public static void testHash(){
-        System.out.println("Test Hash Function (100 buckets, 200 keys)");
+        System.out.println("Test Hash Function (100 buckets, 1000 keys)");
         int[] cnts = new int[100];
-        for(int i = 0; i < 200; i++){
+        for(int i = 0; i < 1000; i++){
             int len = 1 + (int)(Math.random()*20);
             StringBuilder sb = new StringBuilder();
             for(int j = 0; j < len; j++){
